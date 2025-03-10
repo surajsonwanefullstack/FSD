@@ -1,9 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
+    function startQuiz() {
 
-const home = document.querySelector(".home")
-console.log(home)
+        const quizOptions = document.querySelector(".quiz-options")
+        const selectedQuiz = quizOptions.children[0]
+        selectedQuiz.addEventListener('click', (event) => {
+            console.log(event)
+        })
+        home.classList.remove('show')
+        result.classList.remove('show')
+        quiz.classList.add('show')
+        console.log(selectedQuiz)
 
-const quizOptions = document.querySelector(".quiz-options")
-console.log(quizOptions.children[0].innerHTML)
+    }
 
+    const home = document.querySelector(".home")
+    const quiz = document.querySelector(".quiz")
+    const result = document.querySelector(".result")
+
+    console.log(home)
 })
