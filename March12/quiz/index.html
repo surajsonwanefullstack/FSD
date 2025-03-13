@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="assets//favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="home show" id="home">
+            <div class="quiz-info">
+                <h4>Quiz</h4>
+                <img src="assets/testbook.png" width="100" alt="">
+                <input type="text" id="userName" placeholder="Enter Username">
+                <button id="addUser">Enter Username</button>
+            </div>
+            <div class="quiz-options">
+                <ul class="quiz-options">
+                    <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>REACT</li>
+                </ul>
+            </div>
+        </div>
+        <div class="quiz">
+            <h2 class="quiz-name">HTML</h2>
+            <p class="question-count">1/10</p>
+
+            <div id="quiz-status">
+                <p>Time:10</p>
+            <p>Score: 0/10</p>
+
+            </div>
+
+            <div>
+                <h3 id="question">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi praesentium ut vero, laudantium qui fuga! Neque atque minus doloribus?
+                    </p>
+                </h3>
+                <ul id="options">
+                    <form id="quizForm">
+                        <a>
+                            <input title="first"  type="radio" name="language" value="1" />
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, minus?
+                            </p>
+                        </a>
+                        <a>
+                            <input title="second" type="radio" name="language" value="2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere voluptatem est eligendi ipsam. Dolorum!
+                            </p>
+                        </a>
+                        <a>
+                            <input title="third" type="radio" name="language" value="3">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere voluptatem est eligendi ipsam. Dolorum!
+                            </p>
+                        </a>
+                        <a>
+                            <input title="last" type="radio" name="language" value="4s">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem facere voluptatem est eligendi ipsam. Dolorum!
+                            </p>
+
+                        </a>
+
+                    </form>
+                </ul>
+
+            </div>
+
+
+            <div id="score"></div>
+            <div id="question-number"></div>
+            <div id="timer"></div>
+            <button class="next-question">Next Question</button>
+            <button class="quiz-submit" id="quiz-submit" type="submit">Sumit</button>
+
+        </div>
+        <div class="result"> 
+            <div id="result-info">
+                <h1><p><span id="quiz-name">HTML</span></p> </h1>
+                <p><span id="final-score" >lorem</span> Your result is: </p>
+                <p>Total Questions: <span id="final-time"> lorem</span></p>
+                <p>Attempted Questions: <span id="attempted-questions"> lorem</span></p>
+                <p>Corret Answer: <span id="corret-answes"> lorem</span></p>
+                <p>Incorret Answer:<span id="incorrectAnswers"> lorem</span></p>
+                <p>Percantage:<span id="percentage"> lorem</span></p>
+                <div class="buttons">
+                    <button class="quiz-restart-button">Restart</button>
+                    <button class="quiz-home-button ">Home</button>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

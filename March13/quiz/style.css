@@ -1,0 +1,311 @@
+/* font importing */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: rgb(20, 101, 173);
+    --bg-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: var(--primary-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 1024px;
+    height: 720px;
+    /* background-color: #908484; */
+}
+
+.home,
+.quiz,
+.result {
+    position: absolute;
+}
+
+.home {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+    width: 70%;
+    height: auto;
+    /* gap: 10px; */
+    background-color: rgb(239, 245, 245);
+    box-shadow: 3px 3px 5px rgb(244, 244, 247);
+    /* display: none; */
+}
+
+.home input {
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(20, 101, 173);
+
+
+}
+
+.home input:focus {
+    outline: none;
+    margin: 0px;
+    color: rgb(20, 101, 173);
+    border: 1px solid rgb(20, 101, 173);
+}
+
+.home button {
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: rgb(20, 101, 173);
+    padding: 2px 20px;
+    margin-bottom: 10px;
+}
+
+.home button:hover {
+    background-color: rgb(20, 101, 173);
+
+    color: rgb(188, 201, 212);
+
+}
+
+.quiz-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    /* width: 50%; */
+    /* background-color: palegoldenrod; */
+
+}
+
+.quiz-options-container {
+ /* width: 100%; */
+ padding: 5px;
+ margin: 0px;
+
+}
+
+.quiz-options {
+    min-width: 200px;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    /* background-color:var(--bg-color); */
+    box-shadow: 3px 3px 5px rgb(244, 244, 247);
+    padding: 40px;
+    margin: 0px 00 30px 0px;
+
+}
+.quiz-options li{
+    list-style: none;
+    text-align: center;
+    margin: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+a p {
+    /* background-color: tomato; */
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    ;
+
+}
+
+.quiz {
+    /* font-size: .5rem; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px; */
+    width: auto;
+    height: auto;
+    /* padding: 10px 30px; */
+    gap: 5px;
+    /* margin: 20px; */
+    background-color: rgb(239, 245, 245);
+    box-shadow: 3px 3px 5px rgb(244, 244, 247);
+    display: none;
+
+}
+
+#options #quizForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    overflow: hidden;
+    /* background-color: cadetblue; */
+    /* padding-top: ; */
+}
+
+#options #quizForm input[type="radio"] {
+    font-size: 1.2rem;
+    display: inline-block;
+    position: relative;
+    /* top: 20px; */
+    top: 10px;
+    accent-color: var(--primary-color);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    /* opacity:0     */
+    left: 0;
+
+
+}
+
+#options #quizForm a {
+    position: relative;
+    min-width: 100px;
+    min-height: 80px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px 0px;
+    background-color: var(--bg-color);
+    margin: 10px;
+    margin-bottom: -10px;
+}
+
+#quiz-status {
+    display: flex;
+    gap: 10px;
+    font-size: 1.3em;
+    /* background-color: cyan; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.question-count {
+    position: relative;
+    top: 70px;
+    left: 0;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    /* tex */
+
+
+}
+
+#question {
+    font-size: 1.0rem;
+    min-width: 90%;
+    height: auto;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+}
+.quiz-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.quiz button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    background-color: #fff;
+    border: none;
+    color: rgb(20, 101, 173);
+    padding: 2px 20px;
+    margin-bottom: 10px;
+}
+
+/* result page design */
+
+.result {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+    width: 70%;
+    height: 80%;
+    background-color: rgb(239, 245, 245);
+    box-shadow: 3px 3px 5px rgb(244, 244, 247);
+    display: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#result-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var();
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+#result-info p,
+#result-info div {
+    font-size: 1.4rem;
+    margin: 20px;
+}
+
+#result-info span {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#result-info button {
+    font-size: 1.2rem;
+    border-radius: 5px;
+  
+    border: none;
+    color: var(--primary-color);
+    padding: 2px 20px;
+    margin-top: 10px;
+    margin: 0pc 50px;
+}
+
+.show {
+    z-index: 300;
+}
